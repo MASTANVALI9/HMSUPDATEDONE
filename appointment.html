@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Book an appointment at MedCare Hospital. Easy online scheduling with our expert doctors.">
+    <title>Book Appointment | MedCare Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <i class="fas fa-hospital" style="font-size: 32px; color: var(--primary-600);"></i>
+                <span class="navbar-logo-text">Med<span>Care</span></span>
+            </a>
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="about.html" class="navbar-link">About Us</a>
+                <a href="specialities.html" class="navbar-link">Specialities</a>
+                <a href="doctors.html" class="navbar-link">Doctors</a>
+                <a href="facilities.html" class="navbar-link">Facilities</a>
+                <a href="contact.html" class="navbar-link">Contact</a>
+            </div>
+            <a href="appointment.html" class="btn btn-primary navbar-cta active"><i class="fas fa-calendar-plus"></i>
+                Book Appointment</a>
+            <div class="navbar-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Book an Appointment</h1>
+                <p>Schedule your visit with our expert doctors</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Appointment Form Section -->
+    <section class="section">
+        <div class="container">
+            <div class="appointment-container">
+                <!-- Form -->
+                <div class="appointment-form-card" data-animate="fade-right">
+                    <h2 style="margin-bottom: var(--space-6);">Patient Information</h2>
+                    <form id="appointment-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label required" for="name">Full Name</label>
+                                <input type="text" id="name" class="form-input" placeholder="Enter your full name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label required" for="email">Email Address</label>
+                                <input type="email" id="email" class="form-input" placeholder="Enter your email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label required" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="Enter your phone number"
+                                required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label required" for="department">Department</label>
+                                <select id="department" class="form-select" required>
+                                    <option value="">Select Department</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label required" for="doctor">Doctor</label>
+                                <select id="doctor" class="form-select" required disabled>
+                                    <option value="">Select Department First</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label required" for="date">Preferred Date</label>
+                                <input type="date" id="date" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label required" for="time">Preferred Time</label>
+                                <select id="time" class="form-select" required>
+                                    <option value="">Select Time Slot</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="notes">Additional Notes (Optional)</label>
+                            <textarea id="notes" class="form-textarea"
+                                placeholder="Describe your symptoms or reason for visit..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                            <i class="fas fa-calendar-check"></i> Confirm Appointment
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="appointment-sidebar" data-animate="fade-left">
+                    <div class="info-card">
+                        <h3><i class="fas fa-clock"></i> Working Hours</h3>
+                        <div class="info-item"><i class="fas fa-sun"></i><span>Mon - Fri: 8:00 AM - 8:00 PM</span></div>
+                        <div class="info-item"><i class="fas fa-sun"></i><span>Saturday: 9:00 AM - 5:00 PM</span></div>
+                        <div class="info-item"><i class="fas fa-sun"></i><span>Sunday: 10:00 AM - 2:00 PM</span></div>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fas fa-info-circle"></i> Important Info</h3>
+                        <p
+                            style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-3);">
+                            Please arrive 15 minutes before your scheduled appointment.</p>
+                        <p
+                            style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-3);">
+                            Bring any previous medical records or test reports.</p>
+                        <p style="font-size: var(--text-sm); color: var(--text-secondary);">For emergencies, please call
+                            our 24/7 helpline.</p>
+                    </div>
+                    <div class="info-card" style="background: var(--gradient-primary); color: white;">
+                        <h3 style="color: white;"><i class="fas fa-ambulance"></i> Emergency?</h3>
+                        <p style="color: rgba(255,255,255,0.9); font-size: var(--text-sm);">Call our 24/7 emergency
+                            line:</p>
+                        <a href="tel:+1234567890"
+                            style="font-size: var(--text-xl); font-weight: 700; color: white; display: block; margin-top: var(--space-2);">+1
+                            (234) 567-890</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="navbar-logo-text" style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">
+                        Med<span style="color: var(--primary-400);">Care</span></div>
+                    <p>Providing exceptional healthcare services with compassion and excellence.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="doctors.html">Our Doctors</a>
+                        <a href="specialities.html">Specialities</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+1 (234) 567-890</span></div>
+                    <div class="footer-contact-item"><i
+                            class="fas fa-envelope"></i><span>info@medcare-hospital.com</span></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MedCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div style="background: var(--warning); text-align: center; padding: var(--space-3); font-size: var(--text-sm);">
+        <strong>⚠️ Disclaimer:</strong> This is a demo website for educational and portfolio purposes only.
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/appointment.js"></script>
+</body>
+
+</html>

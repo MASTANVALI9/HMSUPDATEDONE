@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Meet our expert medical team at MedCare Hospital. Find specialists in Cardiology, Neurology, Oncology, and more.">
+    <title>Our Doctors | MedCare Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <i class="fas fa-hospital" style="font-size: 32px; color: var(--primary-600);"></i>
+                <span class="navbar-logo-text">Med<span>Care</span></span>
+            </a>
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="about.html" class="navbar-link">About Us</a>
+                <a href="specialities.html" class="navbar-link">Specialities</a>
+                <a href="doctors.html" class="navbar-link active">Doctors</a>
+                <a href="facilities.html" class="navbar-link">Facilities</a>
+                <a href="contact.html" class="navbar-link">Contact</a>
+            </div>
+            <a href="appointment.html" class="btn btn-primary navbar-cta"><i class="fas fa-calendar-plus"></i> Book
+                Appointment</a>
+            <div class="navbar-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Our Doctors</h1>
+                <p>Meet our team of experienced medical professionals</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Doctors Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Search -->
+            <div class="search-input-wrapper" data-animate="fade-up">
+                <i class="fas fa-search"></i>
+                <input type="text" id="doctor-search" placeholder="Search doctors by name or speciality...">
+            </div>
+
+            <!-- Filters -->
+            <div class="doctors-filters" data-animate="fade-up">
+                <button class="filter-btn active" data-department="all">All Departments</button>
+                <button class="filter-btn" data-department="Cardiology">Cardiology</button>
+                <button class="filter-btn" data-department="Neurology">Neurology</button>
+                <button class="filter-btn" data-department="Oncology">Oncology</button>
+                <button class="filter-btn" data-department="Orthopedics">Orthopedics</button>
+                <button class="filter-btn" data-department="Pulmonology">Pulmonology</button>
+                <button class="filter-btn" data-department="Gastroenterology">Gastroenterology</button>
+                <button class="filter-btn" data-department="General Medicine">General Medicine</button>
+            </div>
+
+            <!-- Doctors Grid -->
+            <div id="doctors-grid" class="doctors-grid">
+                <!-- Doctors will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container text-center">
+            <h2 style="margin-bottom: var(--space-4);">Can't Find Your Specialist?</h2>
+            <p
+                style="color: var(--text-secondary); margin-bottom: var(--space-6); max-width: 500px; margin-left: auto; margin-right: auto;">
+                Contact us and we'll help you find the right doctor for your needs.</p>
+            <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-phone"></i> Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="navbar-logo-text" style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">
+                        Med<span style="color: var(--primary-400);">Care</span></div>
+                    <p>Providing exceptional healthcare services with compassion and excellence.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="specialities.html">Specialities</a>
+                        <a href="facilities.html">Facilities</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+1 (234) 567-890</span></div>
+                    <div class="footer-contact-item"><i
+                            class="fas fa-envelope"></i><span>info@medcare-hospital.com</span></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MedCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div style="background: var(--warning); text-align: center; padding: var(--space-3); font-size: var(--text-sm);">
+        <strong>⚠️ Disclaimer:</strong> This is a demo website for educational and portfolio purposes only.
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/doctors.js"></script>
+</body>
+
+</html>

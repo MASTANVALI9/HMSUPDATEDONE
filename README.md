@@ -100,7 +100,7 @@ cp .env.example .env
 # Edit .env with your database credentials
 
 # Initialize database (run schema.sql in PostgreSQL)
-psql -U postgres -d medcare_hospital -f db/schema.sql
+c
 
 # Start server
 npm run dev
